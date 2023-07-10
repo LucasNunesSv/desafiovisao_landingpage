@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html {
+    height: 300vh;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+header.scroll-bt {
+    background-color: #1c1c1c;
+    padding: 15px 4%;
+    transition: 0.3s;
+}
+
+
+header ul {
+    list-style: none;
+
+}
+
+.toggle_btn {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 4rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background-color: #1c1c1c5d;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 22rem;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 40px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.btn-contato-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn-contato-dropdown button {
+    width: 8rem;
+    height: 3rem;
+    background-color: rgb(106, 199, 145);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-contato-dropdown button:hover {
+    background-color: rgb(84, 155, 113);
+    transition: 0.3s;
+}
+
+.btn-contato button:hover {
+    background-color: rgb(84, 155, 113);
+    transition: 0.3s;
+}
+
+.dropdown_menu li:hover {
+    background-color: rgba(106, 199, 145, 0.274);
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.dropdown_menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:890px) {
+
+    header ul,
+    .btn-contato {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .dropdown_menu{
+        width: unset;
+        left: 2rem;
+    }
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+    padding: 15px 20px;
+    border-radius: 10px;
+
+
+}
+
+header ul li:hover {
+    background-color: rgba(106, 199, 145, 0.274);
+    scale: 1.1;
+    transition: 0.3s;
+
+
+
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.banner {
+    height: 100vh;
+    background-image: url(assets/Pexels\ Photo\ by\ Jacob\ Morch.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-attachment: fixed;  */
+}
+
+.banner h1 {
+    font-size: 4rem;
+}
+
+.banner h1 span {
+    color: rgb(106, 199, 145);
+}
+
+.btn-contato button {
+    width: 8rem;
+    height: 3rem;
+    background-color: rgb(106, 199, 145);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-contato button:hover {
+    background-color: rgb(84, 155, 113);
+    transition: 0.3s;
+}
+
+body {
+
+    background-color: #1c1c1c;
+    color: white;
+    margin: 0;
+
+}
+
+#playlist {
+    max-width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:740px) {
+
+    #playlist {
+        max-width: 25rem;
+    }
+
+}
