@@ -7,6 +7,20 @@
 
 html {
     height: 300vh;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-bold-black: #171717;
+    --bg-mid-black: #1C1C1C;
+
+    --luminous-white: #FFFFFF;
+    --luminous-gray: #DCDCDC;
+
+    --primary-purple: #9400D3;
+    --secundary-purple: #741E82;
+
+    font-size: 62.5%; /* 1rem = 10px */
 }
 
 .container {
@@ -133,6 +147,9 @@ header ul {
         width: unset;
         left: 2rem;
     }
+
+    
+    
 }
 
 header ul li {
@@ -159,29 +176,20 @@ header ul li a {
 
 }
 
-.banner {
-    height: 100vh;
-    background-image: url(assets/Pexels\ Photo\ by\ Jacob\ Morch.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-attachment: fixed;  */
+@media (max-width: 500px) {
+    .Home .title h1{
+        display: none;
+    }
 }
 
-.banner h1 {
+.Home .title h2{
     font-size: 4rem;
-}
-
-.banner h1 span {
-    color: rgb(106, 199, 145);
+    padding-top: 10rem;
 }
 
 .btn-contato button {
-    width: 8rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     background-color: rgb(106, 199, 145);
     border: none;
     color: white;
@@ -201,17 +209,15 @@ body {
 
 }
 
-#playlist {
-    max-width: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 @media screen and (max-width:740px) {
 
     #playlist {
         max-width: 25rem;
     }
 
+}
+
+.border{
+    border: 1px solid red;
+    height: 5rem;
 }
