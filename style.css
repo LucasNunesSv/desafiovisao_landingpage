@@ -227,6 +227,7 @@ body {
 
 .form-hero2 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .p-form {
@@ -235,21 +236,21 @@ body {
     width: auto;
 }
 .info  {
-    width: 30%;
+    width: 100%;
     height: auto;
     display: inline-block;
-    margin: 100px;
+    margin: 10%;
 }
 
 form {
     display: grid;
 }
 .form {
-    margin: 100px;
-    width: 70%
+    margin: 10%;
+    width: 10   0%
 }
 input, textarea, button{
-    width: auto;
+    width: 100% ;
     padding: 10px;
     margin: 10px;
 }
