@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>DJ Marquin</title>
 </head>
@@ -16,39 +19,50 @@
     <header id="header">
         <div class="container">
             <div class="flex">
-                <a href="/"><img src="assets/Logo Dj Marquim.png" alt="icon"></a>
+                <a href="#Home"><img class="menu-logo" src="assets/Logo_DJ_MARQUIM2.png" alt="logo DJ Marquim"></a>
                 <nav>
                     <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/">SOBRE</a></li>
-                        <li><a href="/">CONTATO</a></li>
-                        <li><a href="/">FOTOS</a></li>
+                        <li><a href="#Home">HOME</a></li>
+                        <li><a href="#Apresentação">APRESENTAÇÃO</a></li>
+                        <li><a href="#Sobre">SOBRE</a></li>
+                        <li><a href="#Performances">PERFOMANCES</a></li>
+                        <li><a href="#Contato">CONTATO</a></li>
                     </ul>
                 </nav>
-                <div class="btn-contato">
-                    <a href="/"><button><img src="assets/facebook-ico.png" alt="logo facebook"></button></a>
-                    <a href="/"><button><img src="assets/sundcloud-ico.png" alt="soundcloud logo"></button></a>
-                    <a href="/"><button><img src="assets/instagram-ico.png" alt="logo instagram"></button></a>
+                <div class="btn-square btn-hidden">
+                    <a href="https://www.instagram.com/visaojrufop/"><button><img src="assets/instagram-ico.png"
+                                alt="logo Instagram"></button></a>
+                    <a href="https://www.facebook.com/visaojrufop/"><button><img src="assets/facebook-ico.png"
+                                alt="logo Facebook"></button></a>
+                    <a href="https://www.youtube.com/channel/UCdGF3UbUWEejpDYJZbCfeIQ"><button><img
+                                src="assets/sundcloud-ico.png" alt="logo SoundCloud"></button></a>
                 </div><!--btn-contato-->
                 <div class="toggle_btn">
                     <i class="fa-solid fa-bars"></i>
                 </div><!--toggle_btn-->
             </div><!--flex-->
             <div class="dropdown_menu">
-                <li><a href="/">HOME</a></li>
-                <li><a href="/">SOBRE</a></li>
-                <li><a href="/">CONTATO</a></li>
-                <li><a href="/">FOTOS</a></li>
-                <div class="btn-contato-dropdown">
-                    <a href="/"><button>SPOTIFY</button></a>
-            </div><!--dropdown_menu -->
-        </div> <!--Container-->
+                <li><a onclick="closeMenu()" href="#Home">HOME</a></li>
+                <li><a onclick="closeMenu()" href="#Apresentação">APRESENTAÇÃO</a></li>
+                <li><a onclick="closeMenu()" href="#Sobre">SOBRE</a></li>
+                <li><a onclick="closeMenu()" href="#Performances">PERFOMANCES</a></li>
+                <li><a onclick="closeMenu()" href="#Contato">CONTATO</a></li>
+                <div class="btn-square-dropdown">
+                    <a onclick="closeMenu()" href="https://www.instagram.com/visaojrufop/"><button><img
+                                src="assets/instagram-ico.png" alt="logo Instagram"></button></a>
+                    <a onclick="closeMenu()" href="https://www.facebook.com/visaojrufop/"><button><img
+                                src="assets/facebook-ico.png" alt="logo Facebook"></button></a>
+                    <a onclick="closeMenu()"
+                        href="https://www.youtube.com/channel/UCdGF3UbUWEejpDYJZbCfeIQ"><button><img
+                                src="assets/sundcloud-ico.png" alt="logo SoundCloud"></button></a>
+                </div><!--dropdown_menu -->
+            </div> <!--Container-->
     </header>
 
     <!-- Vitor -->
 
-    <section id="Home" class="Home border">
-        <h1>Home</h1>
+    <section id="Home" class="Home ">
+        
     </section>
 
     <!-- End Vitor -->
@@ -57,7 +71,7 @@
 
     <!-- Matheus M. -->
 
-    <section id="Apresentação" class="Apresentação border">
+    <section id="Apresentação" class="Apresentação ">
 
         <h1>Apresentação</h1>
 
@@ -114,7 +128,33 @@
     <!-- ___________________________________________________________________ -->
 
     <footer>
+        <div class="hero1">
 
+        </div>
+        <div class="hero2">
+            <div class="contact">
+                <h2 class="phone">PHONE <br /> <a href="#Home">(31) 98701-7992</a></h2>
+                <img src="assets/Logo_DJ_MARQUIM2_footer2.png" alt="logo DJ Marquim footer">
+                <h2 class="email">EMAIL <br /> <a href="#Home">(31) 98701-7992</a></h2>
+
+            </div>
+
+            <div class="btn-square">
+                <a href="https://www.instagram.com/visaojrufop/"><button><img src="assets/instagram-ico.png"
+                            alt="logo Instagram"></button></a>
+                <a href="https://www.facebook.com/visaojrufop/"><button><img src="assets/facebook-ico.png"
+                            alt="logo Facebook"></button></a>
+                <a href="https://www.youtube.com/channel/UCdGF3UbUWEejpDYJZbCfeIQ"><button><img
+                            src="assets/sundcloud-ico.png" alt="logo SoundCloud"></button></a>
+            </div><!--btn-contato-->
+        </div>
+        <div class="rodape">
+            <div class="recuo"></div>
+            <p>@Feito com carinho pela equipe 5 para a Visão JR 💚</p>
+            <div class="btn-square">
+                <a href="#Home"><button><img src="assets/Up-arrow-vector.png" alt="Seta para cima / retornar a home"></button></a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

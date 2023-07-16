@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
 }
 
 html {
-    height: 300vh;
+    /* height: 300vh; */
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --bg-bold-black: #171717;
     --bg-mid-black: #1C1C1C;
 
@@ -20,7 +21,19 @@ html {
     --primary-purple: #9400D3;
     --secundary-purple: #741E82;
 
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+
+body {
+
+    background-color: #1c1c1c;
+    color: white;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+
 }
 
 .container {
@@ -56,16 +69,17 @@ header ul {
 }
 
 .toggle_btn {
-    font-size: 2rem;
+    font-size: 4rem;
     cursor: pointer;
     display: none;
+    padding: 1.5rem;
 }
 
-.dropdown_menu{
+.dropdown_menu {
     display: none;
     position: absolute;
-    right: 4rem;
-    top: 60px;
+    right: 2rem;
+    top: 90px;
     width: 300px;
     height: 0;
     background-color: #1c1c1c5d;
@@ -73,62 +87,76 @@ header ul {
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown_menu.open{
-    height: 22rem;
+.dropdown_menu.open {
+    height: 50rem;
 }
 
 .dropdown_menu li {
-    padding: 0.7rem;
+    /* padding: 0.7rem; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px 40px;
-    padding: 15px 20px;
-    border-radius: 10px;
 }
 
-.btn-contato-dropdown {
+
+.btn-square-dropdown {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.btn-contato-dropdown button {
-    width: 8rem;
-    height: 3rem;
-    background-color: rgb(106, 199, 145);
+.btn-square-dropdown button {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--bg-bold-black);
     border: none;
     color: white;
     cursor: pointer;
-}
+    margin: 2rem;
 
-.btn-contato-dropdown button:hover {
-    background-color: rgb(84, 155, 113);
     transition: 0.3s;
 }
 
-.btn-contato button:hover {
-    background-color: rgb(84, 155, 113);
-    transition: 0.3s;
+.btn-square-dropdown button img {
+    padding-top: 0.3rem;
 }
 
-.dropdown_menu li:hover {
-    background-color: rgba(106, 199, 145, 0.274);
-    scale: 1.1;
-    transition: 0.3s;
+
+
+.btn-square-dropdown button:hover {
+    background-color: var(--primary-purple);
 }
 
-.dropdown_menu li a{
-    color: white;
+.dropdown_menu li a:hover {
+    color: var(--luminous-gray);
+    text-shadow:
+        0 0 7px var(--primary-purple),
+        0 0 10px var(--primary-purple),
+        0 0 15px var(--primary-purple),
+        0 0 20px var(--primary-purple),
+        0 0 25px var(--primary-purple),
+        0 0 30px var(--primary-purple);
+}
+
+.dropdown_menu li a {
+    color: var(--luminous-gray);
     text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100vh;
+    height: 6rem;
+    padding-top: 1.3rem;
+    text-align: center;
 }
 
 
-@media screen and (max-width:890px) {
+@media screen and (max-width:1157px) {
 
     header ul,
-    .btn-contato {
+    .btn-hidden {
         display: none;
     }
 
@@ -136,78 +164,118 @@ header ul {
         display: block;
     }
 
-    .dropdown_menu{
+    .dropdown_menu {
         display: block;
     }
 
 }
 
 @media screen and (max-width:576px) {
-    .dropdown_menu{
+    .dropdown_menu {
         width: unset;
         left: 2rem;
     }
 
-    
-    
+
+
 }
 
 header ul li {
     display: inline-block;
-    margin: 0 40px;
-    padding: 15px 20px;
-    border-radius: 10px;
+    margin: 0 2rem;
 
 
 }
 
-header ul li:hover {
-    background-color: rgba(106, 199, 145, 0.274);
-    scale: 1.1;
-    transition: 0.3s;
+header ul li a:hover {
+    /* background-color: var(--primary-purple); */
 
-
+    color: var(--luminous-gray);
+    text-shadow:
+        0 0 7px var(--primary-purple),
+        0 0 10px var(--primary-purple),
+        0 0 15px var(--primary-purple),
+        0 0 20px var(--primary-purple),
+        0 0 25px var(--primary-purple),
+        0 0 30px var(--primary-purple);
 
 }
 
 header ul li a {
-    color: white;
+    color: var(--luminous-gray);
     text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    transition: 0.5s;
 
 }
 
-@media (max-width: 500px) {
-    .Home .title h1{
-        display: none;
-    }
+.Home {
+    min-height: 100vh;
+    background-image: url(assets/background-photo-home-degrade.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
 }
 
-.Home .title h2{
-    font-size: 4rem;
+.Home h1 {
     padding-top: 10rem;
+    text-align: center;
+    font-size: 13rem;
+    color: var(--luminous-white);
+    text-shadow:
+        0 0 7px var(--luminous-gray),
+        0 0 10px var(--secundary-purple),
+        0 0 30px var(--secundary-purple),
+        0 0 70px var(--secundary-purple),
+        0 0 100px var(--secundary-purple);
+
 }
 
-.btn-contato button {
+.Home h2 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--luminous-white);
+    margin-top: 2rem;
+}
+
+.Home h1 span {
+    font-size: 17rem;
+}
+
+.Apresentação {
+    min-height: 100vh;
+}
+
+.Sobre {}
+
+.Performances {}
+
+.btn-square button {
     width: 5rem;
     height: 5rem;
-    background-color: rgb(106, 199, 145);
+    background-color: var(--bg-bold-black);
     border: none;
     color: white;
     cursor: pointer;
-}
 
-.btn-contato button:hover {
-    background-color: rgb(84, 155, 113);
     transition: 0.3s;
 }
 
-body {
-
-    background-color: #1c1c1c;
-    color: white;
-    margin: 0;
-
+.btn-square button img {
+    padding-top: 0.3rem;
 }
+
+.btn-square button:hover {
+    background-color: var(--primary-purple);
+}
+
 
 @media screen and (max-width:740px) {
 
@@ -217,7 +285,142 @@ body {
 
 }
 
-.border{
+.border {
     border: 1px solid red;
     height: 5rem;
+}
+
+.menu-logo {
+    max-width: 12rem;
+    max-height: 6rem;
+}
+
+footer {}
+
+footer .hero1 {
+    height: 15rem;
+    background-image: url(assets/Pexels\ Photo\ by\ Francesco\ Paggiaro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer .hero2 {
+    height: 25.5rem;
+}
+
+footer .hero2 .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 2rem;
+}
+
+footer .hero2 .contact h2 {
+    /* margin: 5rem; */
+    width: 20rem;
+    color: var(--primary-purple);
+}
+
+footer .hero2 .contact .email {
+    text-align: right;
+}
+
+footer .hero2 .contact h2 a {
+    color: var(--luminous-white);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .hero2 .contact h2 a:hover {
+    color: var(--primary-purple);
+}
+
+footer .hero2 .contact img {
+    max-width: 10rem;
+}
+
+footer .hero2 .btn-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .hero2 .btn-square a {
+    margin: 0 0.5rem;
+
+}
+
+footer .rodape {
+    background-color: var(--bg-bold-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: rem;
+    font-size: 1rem;
+}
+
+footer .rodape .recuo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+}
+
+footer .rodape .btn-square {
+    margin-right: 1rem;
+}
+
+footer .rodape .btn-square a button img {
+    max-width: 2rem;
+}
+
+footer .rodape .btn-square button {
+    transition: 1s;
+    width: 3.7rem;
+    height: 3.7rem;
+
+}
+
+@media screen and (max-width:600px) {
+
+    footer .hero2 .contact h2 {
+        font-size: 1rem;
+        margin: 2.5rem;
+    }
+
+    footer .hero2 .contact img{
+        max-width: 5rem;
+    }
+
+    footer .hero2{
+        height: 18rem;
+    }
+
+    footer .rodape{
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (max-width:640px){
+
+    .Home{
+        min-height: 150vh;
+        padding-top: 7rem;
+        transition: all 0.3s;
+    }
+
+    .Home h1{
+        font-size: 8rem;
+        
+    }
+
+    .Home h2{
+        font-size: 3rem;
+    }
+
+    .Home h1 span{
+        font-size: 10rem;
+    }
+
 }

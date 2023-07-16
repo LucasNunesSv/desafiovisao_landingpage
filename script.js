@@ -17,6 +17,11 @@ toggleBtn.onclick = function(){
     : 'fa-solid fa-bars'
 }
 
+function closeMenu() {
+    dropdownMenu.classList.toggle('open')
+    toggleBtnIcon.classList = 'fa-solid fa-bars'
+}
+
 
 
 // ------------------------------------
