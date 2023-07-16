@@ -221,3 +221,38 @@ body {
     border: 1px solid red;
     height: 5rem;
 }
+
+/*______________________________________________________________________________________*/
+/*MATHEUS V*/
+
+.form-hero2 {
+    display: flex;
+}
+
+.p-form {
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+}
+.info  {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    margin: 100px;
+}
+
+form {
+    display: grid;
+}
+.form {
+    margin: 100px;
+    width: 70%
+}
+input, textarea, button{
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*MATHEUS V*/
+/*______________________________________________________________________________________*/
