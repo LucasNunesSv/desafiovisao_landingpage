@@ -427,34 +427,51 @@ footer .rodape .btn-square button {
 /*______________________________________________________________________________________*/
 /*MATHEUS V*/
 
+.form-hero1 {
+    display: block;
+    text-align: center;
+    padding: 50px;
+}
+
 .form-hero2 {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap row;
 }
 
-.p-form {
-    margin: 10px;
-    padding: 10px;
-    width: auto;
+.addr {
+    flex: 100px;
+    display: block;
+    text-align: center;
+    padding: 50px;
+    padding-top: 100px;
+    font-size: 2rem;
 }
-.info  {
+
+.redes {
+    flex: 400px;
+    display: flex;
+    gap: 50px;
+    padding: 150px;
+}
+.redes * {
+    flex-grow: 1;
+}
+.redes * * {
     width: 100%;
-    height: auto;
-    display: inline-block;
-    margin: 10%;
+    height: 100%;
 }
 
+.form {
+    flex: 600px;
+    flex-shrink: 1;
+    padding: 15px 30px;
+}
 form {
     display: grid;
 }
-.form {
-    margin: 10%;
-    width: 10   0%
-}
-input, textarea, button{
-    width: 100% ;
-    padding: 10px;
+form * {
     margin: 10px;
+    height: 3rem;
 }
 
 /*MATHEUS V*/
