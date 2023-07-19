@@ -224,7 +224,7 @@ header ul li a {
 /*Vitor início*/
 .Home {
     min-height: 100vh;
-    background-image: url(assets/background-photo-home-degrade.png);
+    background-image: url(assets/background-photo-home-degrade.webp);
     background-repeat: no-repeat;
     background-size: cover;
     /* display: flex; */
@@ -259,7 +259,7 @@ header ul li a {
 /* LUISA INICIO */
 .Sobre-hero1 {
     min-height: 70vh;
-    background-image: url(assets/background-photo-hero1.jpg);
+    background-image: url(assets/background-photo-hero1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -437,7 +437,7 @@ footer {}
 
 footer .hero1 {
     height: 10rem;
-    background-image: url(assets/Pexels\ Photo\ by\ Francesco\ Paggiaro.png);
+    background-image: url(assets/background-photo-hero2.webp);
     background-repeat: no-repeat; 
     background-size: 150rem 60rem;
     background-attachment: fixed;
@@ -549,7 +549,7 @@ footer .rodape .btn-square button {
     display: block;
     text-align: center;
     padding: 50px;
-    background-image: url(assets/Pexels\ Photo\ by\ Francesco\ Paggiaro.png);
+    background-image: url(assets/background-photo-hero2.webp);
     background-size: 150rem 60rem;
     background-attachment: fixed;
     background-repeat: no-repeat;
