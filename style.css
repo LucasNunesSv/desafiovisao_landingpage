@@ -32,8 +32,6 @@ body {
     color: white;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-
-
 }
 
 .container {
@@ -619,7 +617,27 @@ form * {
 /*______________________________________________________________________________________*/
 /*TIAGO E VITOR*/
 
+#Performances .textperformance {
+    justify-content: center;
+    text-align: center;
+}
+
+#Performances .textperformance h1{
+    font-size: 4rem;
+}
+
+#Performances .textperformance h2{
+    font-size: 2rem;
+}
+
+#Performances .galeria ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: auto 10rem;
     
+}
 
 
 /*______________________________________________________________________________________*/
