@@ -360,7 +360,7 @@ header ul li a {
     text-align: left;
     color: var(--luminous-gray);
     font-size: 24px;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-weight: 700;
     line-height: 36px;
     word-wrap: break-word;
@@ -377,6 +377,16 @@ header ul li a {
     line-height: 30px;
     word-wrap: break-word;
 }
+
+/* .Sobre-hero1-container iframe{
+    height: 35rem;
+    margin:auto;
+}
+
+.Sobre-hero1-container {
+} */
+
+
 
 /* FIM LUISA */
 
@@ -526,29 +536,6 @@ footer .rodape .btn-square button {
 
     footer .rodape {
         font-size: 0.7rem;
-    }
-
-}
-
-@media screen and (max-width:640px) {
-
-    .Home {
-        min-height: 150vh;
-        padding-top: 7rem;
-        transition: all 0.3s;
-    }
-
-    .Home h1 {
-        font-size: 8rem;
-
-    }
-
-    .Home h2 {
-        font-size: 3rem;
-    }
-
-    .Home h1 span {
-        font-size: 10rem;
     }
 
 }
