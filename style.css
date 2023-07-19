@@ -213,6 +213,7 @@ header ul li a {
 
 }
 
+/*Vitor início*/
 .Home {
     min-height: 100vh;
     background-image: url(assets/background-photo-home-degrade.png);
@@ -248,6 +249,8 @@ header ul li a {
 .Home h1 span {
     font-size: 17rem;
 }
+
+/*Vitor final*/
 
 .Apresentação {
     min-height: 100vh;
@@ -379,6 +382,8 @@ header ul li a {
 
 .Performances {}
 
+
+
 .btn-square button {
     width: 5rem;
     height: 5rem;
@@ -409,7 +414,6 @@ header ul li a {
 
 .border {
     border: 1px solid red;
-    height: 5rem;
 }
 
 .menu-logo {
