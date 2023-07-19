@@ -253,21 +253,134 @@ header ul li a {
     min-height: 100vh;
 }
 
+/* LUISA INICIO */
 .Sobre-hero1 {
     min-height: 70vh;
     background-image: url(assets/background-photo-hero1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
 
+.Sobre-hero1-body {
+    min-height: 70vh;
+    height: 100%;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
+.Sobre-hero1-container {
+    width: 100%;
+    height: 440px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
 
+.Sobre-hero1 h4 {
 
+    color: var(--luminous-white);
+
+    /* Body H4 */
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 150% */
+    letter-spacing: -0.36px;
+}
+
+.Sobre-hero1 p {
+    color: var(--luminous-white);
+
+    /* Body P */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+    letter-spacing: -0.27px;
 }
 
 .Sobre-hero2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 70vh;
 }
+
+.Sobre-hero2-body {
+    min-height: 70vh;
+    height: 100%;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    position: relative;
+    background: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Sobre-hero2-container {
+    width: 100%;
+    height: 440px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Sobre-hero2-title {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 96px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 36px;
+    word-wrap: break-word;
+    align-items: center;
+}
+
+
+.Sobre-hero2 h4 {
+    padding-left: 30px;
+    padding-right: 22px;
+    text-align: left;
+    color: var(--luminous-gray);
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 36px;
+    word-wrap: break-word;
+}
+
+.Sobre-hero2 p {
+    padding-left: 30px;
+    padding-right: 22px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+/* FIM LUISA */
 
 .Performances {}
 
@@ -402,42 +515,43 @@ footer .rodape .btn-square button {
         margin: 2.5rem;
     }
 
-    footer .hero2 .contact img{
+    footer .hero2 .contact img {
         max-width: 5rem;
     }
 
-    footer .hero2{
+    footer .hero2 {
         height: 18rem;
     }
 
-    footer .rodape{
+    footer .rodape {
         font-size: 0.7rem;
     }
 
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:640px) {
 
-    .Home{
+    .Home {
         min-height: 150vh;
         padding-top: 7rem;
         transition: all 0.3s;
     }
 
-    .Home h1{
+    .Home h1 {
         font-size: 8rem;
-        
+
     }
 
-    .Home h2{
+    .Home h2 {
         font-size: 3rem;
     }
 
-    .Home h1 span{
+    .Home h1 span {
         font-size: 10rem;
     }
 
 }
+
 /*______________________________________________________________________________________*/
 /*MATHEUS V*/
 
@@ -467,9 +581,11 @@ footer .rodape .btn-square button {
     gap: 50px;
     padding: 150px;
 }
+
 .redes * {
     flex-grow: 1;
 }
+
 .redes * * {
     width: 100%;
     height: 100%;
@@ -480,12 +596,15 @@ footer .rodape .btn-square button {
     flex-shrink: 1;
     padding: 15px 30px;
 }
+
 form {
     display: grid;
 }
+
 form * {
     margin: 10px;
     height: 3rem;
 }
+
 /*MATHEUS V*/
 /*______________________________________________________________________________________*/
