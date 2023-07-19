@@ -213,6 +213,16 @@ header ul li a {
 
 }
 
+.neon-title {
+    color: var(--luminous-white);
+    text-shadow:
+        0 0 7px var(--luminous-gray),
+        0 0 10px var(--secundary-purple),
+        0 0 30px var(--secundary-purple),
+        0 0 70px var(--secundary-purple),
+        0 0 100px var(--secundary-purple);
+}
+
 /*Vitor início*/
 .Home {
     min-height: 100vh;
@@ -225,17 +235,9 @@ header ul li a {
 }
 
 .Home h1 {
-    padding-top: 10rem;
+    padding-top: 20rem;
     text-align: center;
     font-size: 13rem;
-    color: var(--luminous-white);
-    text-shadow:
-        0 0 7px var(--luminous-gray),
-        0 0 10px var(--secundary-purple),
-        0 0 30px var(--secundary-purple),
-        0 0 70px var(--secundary-purple),
-        0 0 100px var(--secundary-purple);
-
 }
 
 .Home h2 {
@@ -434,15 +436,16 @@ header ul li a {
 footer {}
 
 footer .hero1 {
-    height: 15rem;
+    height: 10rem;
     background-image: url(assets/Pexels\ Photo\ by\ Francesco\ Paggiaro.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat; 
+    background-size: 150rem 60rem;
     background-attachment: fixed;
+    background-position: center;
 }
 
 footer .hero2 {
-    height: 25.5rem;
+    height: 22rem;
 }
 
 footer .hero2 .contact {
@@ -450,6 +453,7 @@ footer .hero2 .contact {
     align-items: center;
     justify-content: center;
     margin: 2rem 2rem;
+    margin-top: 4rem;
 }
 
 footer .hero2 .contact h2 {
@@ -545,6 +549,20 @@ footer .rodape .btn-square button {
     display: block;
     text-align: center;
     padding: 50px;
+    background-image: url(assets/Pexels\ Photo\ by\ Francesco\ Paggiaro.png);
+    background-size: 150rem 60rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-hero1 h1{
+    font-size: 5rem;
+}
+
+.form-hero1 h2{
+    margin-top: 2rem;
+    font-size: 2rem;
 }
 
 .form-hero2 {
@@ -594,3 +612,13 @@ form * {
 
 /*MATHEUS V*/
 /*______________________________________________________________________________________*/
+
+
+/*______________________________________________________________________________________*/
+/*TIAGO E VITOR*/
+
+    
+
+
+/*______________________________________________________________________________________*/
+/* END TIAGO E VITOR*/
