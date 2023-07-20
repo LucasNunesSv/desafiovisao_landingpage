@@ -584,22 +584,6 @@ footer .rodape .btn-square button {
     font-size: 2rem;
 }
 
-.redes {
-    flex: 400px;
-    display: flex;
-    gap: 50px;
-    padding: 150px;
-}
-
-.redes * {
-    flex-grow: 1;
-}
-
-.redes * * {
-    width: 100%;
-    height: 100%;
-}
-
 .form {
     flex: 600px;
     flex-shrink: 1;
@@ -613,6 +597,21 @@ form {
 form * {
     margin: 10px;
     height: 3rem;
+    font-size: inherit;
+    background-color: var(--bg-bold-black);
+    border: solid 3px var(--primary-purple);
+    color: var(--luminous-gray);
+    font-size: 2rem;
+}
+
+form textarea {
+    height: 6rem;
+    padding-top: 10px;
+}
+form button {
+    height: 6rem;
+    margin-right: 800px;
+    padding: 0px;
 }
 
 /*MATHEUS V*/
