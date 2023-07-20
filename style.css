@@ -254,8 +254,35 @@ header ul li a {
 
 .Apresentação {
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
 }
+.Apresentação .fotoperfil img {
+    max-width: 60rem;
+    
+}
+.Apresentação .textoapresentação h1 {
+    font-size: 6rem;
+    text-align: center;
+    transition: 0.3s;
+}
+.Apresentação .textoapresentação h1:hover{
+    color: var(--primary-purple);
 
+
+
+}
+.Apresentação .textoapresentação p {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 4rem;    
+}
+.Apresentação .textoapresentação {
+    margin: 0 7rem;
+
+}
 /* LUISA INICIO */
 .Sobre-hero1 {
     min-height: 70vh;
