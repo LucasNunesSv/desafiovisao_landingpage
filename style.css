@@ -271,21 +271,65 @@ header ul li a {
     }
 }
 
-@media screen and (max-width:622px) {
-
-    .Home h1
-    {
-        font-size: 10rem;
-    }
-    .Home h2
-    {
-        font-size: 3.5rem;
-    }
-}
 /*Vitor final*/
 
 .Apresentação {
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+}
+.Apresentação .fotoperfil img {
+    width: 60rem;
+    max-width: 120%;
+
+    
+}
+.Apresentação .textoapresentação h1 {
+    font-size: 6rem;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+.Apresentação .textoapresentação h1:hover{
+    color: var(--primary-purple);
+    text-shadow:
+        0 0 7px var(--primary-purple),
+        0 0 10px var(--secundary-purple),
+        0 0 30px var(--secundary-purple),
+        0 0 70px var(--secundary-purple),
+        0 0 100px var(--secundary-purple);
+
+
+
+}
+.Apresentação .textoapresentação p {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 4rem;    
+}
+.Apresentação .textoapresentação {
+    margin: 0 7rem;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+.Apresentação .textoapresentação img{
+    display: none;
+}
+
+@media screen and (max-width:1050px){
+
+    .Apresentação .textoapresentação h1{
+        font-size: 4rem;
+    }
+
+    .Apresentação .textoapresentação p{
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (max-width:700px){
@@ -447,11 +491,6 @@ header ul li a {
 /* FIM LUISA */
 
 .Performances {}
-    
-#Performances .galeria ul a li img{
-    max-width: 100px;
-    max-height: 100px;
-    }
 
 
 
