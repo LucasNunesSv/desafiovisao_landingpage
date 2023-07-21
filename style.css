@@ -80,7 +80,7 @@ header ul {
     top: 90px;
     width: 300px;
     height: 0;
-    background-color: #1c1c1c5d;
+    background-color: var(--bg-mid-black);
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -250,6 +250,27 @@ header ul li a {
     font-size: 17rem;
 }
 
+@media screen and (max-width:840px){
+    .Home h1{
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (max-width:630px){
+    .Home h1{
+        font-size: 8rem;
+        padding-top: 20rem;
+    }
+    .Home h2{
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+    .Home{
+        background-size: 160rem;
+        min-height: 80vh;
+    }
+}
+
 /*Vitor final*/
 
 .Apresentação {
@@ -269,6 +290,7 @@ header ul li a {
     font-size: 6rem;
     text-align: center;
     transition: 0.3s;
+    
 }
 .Apresentação .textoapresentação h1:hover{
     color: var(--primary-purple);
@@ -290,6 +312,43 @@ header ul li a {
 .Apresentação .textoapresentação {
     margin: 0 7rem;
     max-width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+.Apresentação .textoapresentação img{
+    display: none;
+}
+
+@media screen and (max-width:1050px){
+
+    .Apresentação .textoapresentação h1{
+        font-size: 4rem;
+    }
+
+    .Apresentação .textoapresentação p{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    .Apresentação .fotoperfil{
+        display: none;
+    }
+
+    .Apresentação .textoapresentação{
+        max-width: 100%;
+        margin: 0 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Apresentação .textoapresentação img{
+        display: flex;
+        max-width: 30rem;
+        
+    }
 
 }
 /* LUISA INICIO */
