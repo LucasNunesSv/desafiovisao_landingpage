@@ -32,8 +32,6 @@ body {
     color: white;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-
-
 }
 
 .container {
@@ -82,7 +80,7 @@ header ul {
     top: 90px;
     width: 300px;
     height: 0;
-    background-color: #1c1c1c5d;
+    background-color: var(--bg-mid-black);
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -213,10 +211,20 @@ header ul li a {
 
 }
 
+.neon-title {
+    color: var(--luminous-white);
+    text-shadow:
+        0 0 7px var(--luminous-gray),
+        0 0 10px var(--secundary-purple),
+        0 0 30px var(--secundary-purple),
+        0 0 70px var(--secundary-purple),
+        0 0 100px var(--secundary-purple);
+}
+
 /*Vitor início*/
 .Home {
     min-height: 100vh;
-    background-image: url(assets/background-photo-home-degrade.png);
+    background-image: url(assets/background-photo-home-degrade.webp);
     background-repeat: no-repeat;
     background-size: cover;
     /* display: flex; */
@@ -225,17 +233,9 @@ header ul li a {
 }
 
 .Home h1 {
-    padding-top: 10rem;
+    padding-top: 20rem;
     text-align: center;
     font-size: 13rem;
-    color: var(--luminous-white);
-    text-shadow:
-        0 0 7px var(--luminous-gray),
-        0 0 10px var(--secundary-purple),
-        0 0 30px var(--secundary-purple),
-        0 0 70px var(--secundary-purple),
-        0 0 100px var(--secundary-purple);
-
 }
 
 .Home h2 {
@@ -248,6 +248,27 @@ header ul li a {
 
 .Home h1 span {
     font-size: 17rem;
+}
+
+@media screen and (max-width:840px){
+    .Home h1{
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (max-width:630px){
+    .Home h1{
+        font-size: 8rem;
+        padding-top: 20rem;
+    }
+    .Home h2{
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+    .Home{
+        background-size: 160rem;
+        min-height: 80vh;
+    }
 }
 
 @media screen and (max-width:622px) {
@@ -267,10 +288,29 @@ header ul li a {
     min-height: 100vh;
 }
 
+@media screen and (max-width:700px){
+    .Apresentação .fotoperfil{
+        display: none;
+    }
+
+    .Apresentação .textoapresentação{
+        max-width: 100%;
+        margin: 0 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Apresentação .textoapresentação img{
+        display: flex;
+        max-width: 30rem;
+        
+    }
+
+}
 /* LUISA INICIO */
 .Sobre-hero1 {
     min-height: 70vh;
-    background-image: url(assets/background-photo-hero1.jpg);
+    background-image: url(assets/background-photo-hero1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -295,6 +335,14 @@ header ul li a {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    margin-right: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.Sobre-hero1-container iframe{
+    height: 35rem;
+    margin:auto;
 }
 
 .Sobre-hero1 h4 {
@@ -309,6 +357,7 @@ header ul li a {
     line-height: 36px;
     /* 150% */
     letter-spacing: -0.36px;
+    text-align: justify;
 }
 
 .Sobre-hero1 p {
@@ -322,6 +371,7 @@ header ul li a {
     line-height: 30px;
     /* 166.667% */
     letter-spacing: -0.27px;
+    text-align: justify;
 }
 
 .Sobre-hero2 {
@@ -348,9 +398,12 @@ header ul li a {
     width: 100%;
     height: 440px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
+    margin-right: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .Sobre-hero2-title {
@@ -367,7 +420,6 @@ header ul li a {
 
 .Sobre-hero2 h4 {
     padding-left: 30px;
-    padding-right: 22px;
     text-align: left;
     color: var(--luminous-gray);
     font-size: 24px;
@@ -375,11 +427,11 @@ header ul li a {
     font-weight: 700;
     line-height: 36px;
     word-wrap: break-word;
+    text-align: justify;
 }
 
 .Sobre-hero2 p {
     padding-left: 30px;
-    padding-right: 22px;
     text-align: left;
     color: rgba(255, 255, 255, 0.80);
     font-size: 18px;
@@ -387,15 +439,8 @@ header ul li a {
     font-weight: 400;
     line-height: 30px;
     word-wrap: break-word;
+    text-align: justify;
 }
-
-/* .Sobre-hero1-container iframe{
-    height: 35rem;
-    margin:auto;
-}
-
-.Sobre-hero1-container {
-} */
 
 
 
@@ -452,15 +497,16 @@ header ul li a {
 footer {}
 
 footer .hero1 {
-    height: 15rem;
-    background-image: url(assets/Pexels\ Photo\ by\ Francesco\ Paggiaro.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 10rem;
+    background-image: url(assets/background-photo-hero2.webp);
+    background-repeat: no-repeat; 
+    background-size: 150rem 60rem;
     background-attachment: fixed;
+    background-position: center;
 }
 
 footer .hero2 {
-    height: 25.5rem;
+    height: 22rem;
 }
 
 footer .hero2 .contact {
@@ -468,6 +514,7 @@ footer .hero2 .contact {
     align-items: center;
     justify-content: center;
     margin: 2rem 2rem;
+    margin-top: 4rem;
 }
 
 footer .hero2 .contact h2 {
@@ -559,10 +606,25 @@ footer .rodape .btn-square button {
 /*______________________________________________________________________________________*/
 /*MATHEUS V*/
 
+/*--------------------------*/
 .form-hero1 {
     display: block;
     text-align: center;
-    padding: 50px;
+    height: 30vh;
+    background-image: url(assets/background-photo-hero2.webp);
+    background-size: 150rem 60rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-hero1 h1 {
+    font-size: 5rem;
+    padding-top: 60px
+}
+.form-hero1 h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
 }
 
 .form-hero2 {
@@ -570,45 +632,105 @@ footer .rodape .btn-square button {
     flex-flow: wrap row;
 }
 
+.form-hero2 .addr{
+
+}
+
+@media (max-width: 600px) {
+    .form-hero2{
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        width: 100vw; 
+    }
+
+    .form * {
+        width: 100%;    
+    }
+}
+
 .addr {
     flex: 100px;
-    display: block;
+    display: flex;
     text-align: center;
     padding: 50px;
-    padding-top: 100px;
     font-size: 2rem;
-}
-
-.redes {
-    flex: 400px;
-    display: flex;
-    gap: 50px;
-    padding: 150px;
-}
-
-.redes * {
-    flex-grow: 1;
-}
-
-.redes * * {
-    width: 100%;
-    height: 100%;
+    max-width: 50vw;
+    align-items: center;
+    align-items: center;
 }
 
 .form {
-    flex: 600px;
-    flex-shrink: 1;
     padding: 15px 30px;
+    font-size: 3rem;
+}
+.form p {
+    margin: 30px;
+    margin: 5rem 5rem;
+    max-width: 50vw;
 }
 
 form {
     display: grid;
+    gap: 20px;
 }
 
 form * {
-    margin: 10px;
+    margin: 10px 0;
     height: 3rem;
+    font-size: inherit;
+    background-color: var(--bg-bold-black);
+    border: solid 3px var(--primary-purple);
+    color: var(--luminous-gray);
+    font-size: 2rem;
+    max-width: 50rem;
+}
+
+.form p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+form textarea {
+    height: 15rem;
+    padding-top: 10px;
+}
+form button {
+    width: 30%;
+    margin: 10px;
+    margin-left: 0px;
 }
 
 /*MATHEUS V*/
 /*______________________________________________________________________________________*/
+
+
+/*______________________________________________________________________________________*/
+/*TIAGO E VITOR*/
+
+#Performances .textperformance {
+    justify-content: center;
+    text-align: center;
+}
+
+#Performances .textperformance h1{
+    font-size: 4rem;
+}
+
+#Performances .textperformance h2{
+    font-size: 2rem;
+}
+
+#Performances .galeria ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: auto 10rem;
+    
+}
+
+
+/*______________________________________________________________________________________*/
+/* END TIAGO E VITOR*/
