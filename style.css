@@ -250,6 +250,17 @@ header ul li a {
     font-size: 17rem;
 }
 
+@media screen and (max-width:622px) {
+
+    .Home h1
+    {
+        font-size: 10rem;
+    }
+    .Home h2
+    {
+        font-size: 3.5rem;
+    }
+}
 /*Vitor final*/
 
 .Apresentação {
@@ -391,6 +402,11 @@ header ul li a {
 /* FIM LUISA */
 
 .Performances {}
+    
+#Performances .galeria ul a li img{
+    max-width: 100px;
+    max-height: 100px;
+    }
 
 
 
