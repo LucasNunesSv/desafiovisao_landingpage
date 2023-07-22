@@ -495,6 +495,45 @@ header ul li a {
     text-align: justify;
 }
 
+/* Responsividade para telas menores */
+  @media screen and (max-width: 1110px) {
+    .Sobre-hero1-body, .Sobre-hero2-body {
+      padding: 20px; 
+      flex-direction: column; 
+    }
+  
+    .Sobre-hero1-container, .Sobre-hero2-container {
+      margin: 20px;
+      height: auto; 
+    }
+  
+    .Sobre-hero1-container iframe {
+      height: 25rem; 
+      width: 100%; 
+    }
+  
+    .Sobre-hero1 h4, .Sobre-hero1 p, .Sobre-hero2-title, .Sobre-hero2 h4, .Sobre-hero2 p {
+      font-size: 16px; 
+      line-height: 24px;
+    }
+  
+    .Sobre-hero2-container {
+      align-items: center; 
+      text-align: center; 
+      margin: 20px;
+    }
+  
+    .Sobre-hero2-title {
+      font-size: 36px; 
+      line-height: 48px;
+    }
+  
+    .Sobre-hero2 h4, .Sobre-hero2 p {
+      font-size: 14px; 
+      line-height: 20px;
+      padding: 0; 
+    }
+  }
 
 
 /* FIM LUISA */
