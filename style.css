@@ -250,22 +250,24 @@ header ul li a {
     font-size: 17rem;
 }
 
-@media screen and (max-width:840px){
-    .Home h1{
+@media screen and (max-width:840px) {
+    .Home h1 {
         padding-top: 10rem;
     }
 }
 
-@media screen and (max-width:630px){
-    .Home h1{
+@media screen and (max-width:630px) {
+    .Home h1 {
         font-size: 8rem;
         padding-top: 20rem;
     }
-    .Home h2{
+
+    .Home h2 {
         font-size: 3rem;
         margin-top: 5rem;
     }
-    .Home{
+
+    .Home {
         background-size: 160rem;
         min-height: 80vh;
     }
@@ -277,22 +279,25 @@ header ul li a {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
     align-items: center;
 }
+
 .Apresentação .fotoperfil img {
     width: 60rem;
     max-width: 120%;
 
-    
+
 }
+
 .Apresentação .textoapresentação h1 {
     font-size: 6rem;
     text-align: center;
     transition: 0.3s;
-    
+
 }
-.Apresentação .textoapresentação h1:hover{
+
+.Apresentação .textoapresentação h1:hover {
     color: var(--primary-purple);
     text-shadow:
         0 0 7px var(--primary-purple),
@@ -304,11 +309,13 @@ header ul li a {
 
 
 }
+
 .Apresentação .textoapresentação p {
     font-size: 3rem;
     text-align: center;
-    margin-top: 4rem;    
+    margin-top: 4rem;
 }
+
 .Apresentação .textoapresentação {
     margin: 0 7rem;
     max-width: 50%;
@@ -316,41 +323,43 @@ header ul li a {
     align-items: center;
 
 }
-.Apresentação .textoapresentação img{
+
+.Apresentação .textoapresentação img {
     display: none;
 }
 
-@media screen and (max-width:1050px){
+@media screen and (max-width:1050px) {
 
-    .Apresentação .textoapresentação h1{
+    .Apresentação .textoapresentação h1 {
         font-size: 4rem;
     }
 
-    .Apresentação .textoapresentação p{
+    .Apresentação .textoapresentação p {
         font-size: 2rem;
     }
 
 }
 
-@media screen and (max-width:700px){
-    .Apresentação .fotoperfil{
+@media screen and (max-width:700px) {
+    .Apresentação .fotoperfil {
         display: none;
     }
 
-    .Apresentação .textoapresentação{
+    .Apresentação .textoapresentação {
         max-width: 100%;
         margin: 0 5rem;
         display: flex;
         flex-direction: column;
     }
 
-    .Apresentação .textoapresentação img{
+    .Apresentação .textoapresentação img {
         display: flex;
         max-width: 30rem;
-        
+
     }
 
 }
+
 /* LUISA INICIO */
 .Sobre-hero1 {
     min-height: 70vh;
@@ -384,9 +393,9 @@ header ul li a {
     margin-bottom: 80px;
 }
 
-.Sobre-hero1-container iframe{
+.Sobre-hero1-container iframe {
     height: 35rem;
-    margin:auto;
+    margin: auto;
 }
 
 .Sobre-hero1 h4 {
@@ -537,9 +546,9 @@ footer {}
 
 footer .hero1 {
     height: 10rem;
-    background-image: url(assets/background-photo-hero2.webp);
-    background-repeat: no-repeat; 
-    background-size: 150rem 60rem;
+    background-image: url(assets/pexels-francesco-paggiaro-2111015.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
@@ -650,8 +659,8 @@ footer .rodape .btn-square button {
     display: block;
     text-align: center;
     height: 30vh;
-    background-image: url(assets/background-photo-hero2.webp);
-    background-size: 150rem 60rem;
+    background-image: url(assets/pexels-francesco-paggiaro-2111015.webp);
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -659,8 +668,9 @@ footer .rodape .btn-square button {
 
 .form-hero1 h1 {
     font-size: 5rem;
-    padding-top: 60px
+    padding-top: 4rem;
 }
+
 .form-hero1 h2 {
     font-size: 2rem;
     margin-top: 2rem;
@@ -671,22 +681,27 @@ footer .rodape .btn-square button {
     flex-flow: wrap row;
 }
 
-.form-hero2 .addr{
-
+.form-hero2 .addr {
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 600px) {
-    .form-hero2{
+    .form-hero2 {
         grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
     }
 
     .form {
-        width: 100vw; 
+        width: 100vw;
     }
 
     .form * {
-        width: 100%;    
+        width: 100%;
     }
+
+    
 }
 
 .addr {
@@ -704,9 +719,11 @@ footer .rodape .btn-square button {
     padding: 15px 30px;
     font-size: 3rem;
 }
+
 .form p {
-    margin: 30px;
-    margin: 5rem 5rem;
+    /* margin: 30px; */
+    /* margin: 5rem 5rem; */
+    margin-top: 5rem;
     max-width: 50vw;
 }
 
@@ -735,6 +752,7 @@ form textarea {
     height: 15rem;
     padding-top: 10px;
 }
+
 form button {
     width: 30%;
     margin: 10px;
@@ -753,23 +771,47 @@ form button {
     text-align: center;
 }
 
-#Performances .textperformance h1{
+#Performances .textperformance h1 {
+    margin-top: 5rem;
     font-size: 4rem;
 }
 
-#Performances .textperformance h2{
+#Performances .textperformance h2 {
     font-size: 2rem;
+    margin-top: 3rem;
 }
 
-#Performances .galeria ul{
+#Performances .galeria ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
     margin: auto 10rem;
-    
+
 }
+
+#Performances .galeria ul a li {
+    transition: 0.3s;
+
+}
+
+#Performances .galeria ul a li img {
+    max-width: 23rem;
+    max-height: 23rem;
+    margin-bottom: 6rem;
+    border: none;
+    transition: 0.3s;
+}
+
+#Performances .galeria ul a li img:hover {
+    border: solid var(--primary-purple) 1rem;
+}
+
 
 
 /*______________________________________________________________________________________*/
 /* END TIAGO E VITOR*/
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    
+}
