@@ -34,6 +34,43 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.neon-title {
+    color: var(--luminous-white);
+    text-shadow:
+        0 0 7px var(--luminous-gray),
+        0 0 10px var(--secundary-purple),
+        0 0 30px var(--secundary-purple),
+        0 0 70px var(--secundary-purple),
+        0 0 100px var(--secundary-purple);
+}
+
+.btn-square button {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--bg-bold-black);
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-square button img {
+    padding-top: 0.3rem;
+}
+
+.btn-square button:hover {
+    background-color: var(--primary-purple);
+}
+
+
+/* -- Navbar e MenuHamburguer */
+
+.menu-logo {
+    max-width: 12rem;
+    max-height: 6rem;
+}
+
 .container {
     max-width: 1280px;
     margin: auto;
@@ -121,8 +158,6 @@ header ul {
     padding-top: 0.3rem;
 }
 
-
-
 .btn-square-dropdown button:hover {
     background-color: var(--primary-purple);
 }
@@ -150,7 +185,6 @@ header ul {
     text-align: center;
 }
 
-
 @media screen and (max-width:1158px) {
 
     header ul,
@@ -174,15 +208,11 @@ header ul {
         left: 2rem;
     }
 
-
-
 }
 
 header ul li {
     display: inline-block;
     margin: 0 2rem;
-
-
 }
 
 header ul li a:hover {
@@ -211,17 +241,8 @@ header ul li a {
 
 }
 
-.neon-title {
-    color: var(--luminous-white);
-    text-shadow:
-        0 0 7px var(--luminous-gray),
-        0 0 10px var(--secundary-purple),
-        0 0 30px var(--secundary-purple),
-        0 0 70px var(--secundary-purple),
-        0 0 100px var(--secundary-purple);
-}
+/* -- Home */
 
-/*Vitor início*/
 .Home {
     min-height: 100vh;
     background-image: url(assets/background-photo-home-degrade.webp);
@@ -273,7 +294,7 @@ header ul li a {
     }
 }
 
-/*Vitor final*/
+/* -- Apresentação */
 
 .Apresentação {
     min-height: 100vh;
@@ -286,15 +307,13 @@ header ul li a {
 .Apresentação .fotoperfil img {
     width: 60rem;
     max-width: 120%;
-
-
 }
 
 .Apresentação .textoapresentação h1 {
     font-size: 6rem;
     text-align: center;
     transition: 0.3s;
-
+    margin: 5rem 0;
 }
 
 .Apresentação .textoapresentação h1:hover {
@@ -305,9 +324,6 @@ header ul li a {
         0 0 30px var(--secundary-purple),
         0 0 70px var(--secundary-purple),
         0 0 100px var(--secundary-purple);
-
-
-
 }
 
 .Apresentação .textoapresentação p {
@@ -321,7 +337,6 @@ header ul li a {
     max-width: 50%;
     justify-content: center;
     align-items: center;
-
 }
 
 .Apresentação .textoapresentação img {
@@ -360,7 +375,8 @@ header ul li a {
 
 }
 
-/* LUISA INICIO */
+/* -- Sobre */
+
 .Sobre-hero1 {
     min-height: 70vh;
     background-image: url(assets/background-photo-hero1.webp);
@@ -440,7 +456,7 @@ header ul li a {
     width: 100%;
     padding-left: 80px;
     padding-right: 80px;
-    background: #171717;
+    background: var(--bg-bold-black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -461,7 +477,7 @@ header ul li a {
 
 .Sobre-hero2-title {
     text-align: center;
-    color: black;
+    color: var(--bg-bold-black);
     font-size: 96px;
     font-family: Montserrat;
     font-weight: 700;
@@ -469,7 +485,6 @@ header ul li a {
     word-wrap: break-word;
     align-items: center;
 }
-
 
 .Sobre-hero2 h4 {
     padding-left: 30px;
@@ -535,48 +550,174 @@ header ul li a {
     }
   }
 
+/* -- Performances */
 
-/* FIM LUISA */
+#Performances .textperformance {
+    justify-content: center;
+    text-align: center;
+}
 
+#Performances .textperformance h1 {
+    margin-top: 5rem;
+    font-size: 4rem;
+}
 
-.btn-square button {
-    width: 5rem;
-    height: 5rem;
-    background-color: var(--bg-bold-black);
+#Performances .textperformance h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+#Performances .galeria ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: auto 10rem;
+    justify-content: center;
+
+}
+
+#Performances .galeria ul a li {
+    transition: 0.3s;
+    margin: 0 3rem;
+
+}
+
+#Performances .galeria ul a li img {
+    max-width: 30rem;
+    max-height: 30rem;
+    margin-bottom: 6rem;
     border: none;
-    color: white;
-    cursor: pointer;
-
     transition: 0.3s;
 }
 
-.btn-square button img {
-    padding-top: 0.3rem;
+#Performances .galeria ul a li img:hover {
+    border: solid var(--primary-purple) 1rem;
 }
 
-.btn-square button:hover {
-    background-color: var(--primary-purple);
+/* -- Contato */
+
+.form-hero1 {
+    display: block;
+    text-align: center;
+    height: 30vh;
+    background-image: url(assets/background-photo-hero2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.form-hero1 h1 {
+    font-size: 5rem;
+    padding-top: 4rem;
+}
 
-@media screen and (max-width:740px) {
+.form-hero1 h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
 
-    #playlist {
-        max-width: 25rem;
+.form-hero2 {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.form-hero2 .addr {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .form-hero2 {
+        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
     }
 
+    .form * {
+        width: 100%;
+    }
+
+    .addr{
+        margin: 4rem 0 2rem 0;
+    }
 }
 
-.menu-logo {
-    max-width: 12rem;
-    max-height: 6rem;
+.addr {
+    flex: 100px;
+    display: flex;
+    text-align: center;
+    /* padding: 50px; */
+    font-size: 2rem;
+    max-width: 50vw;
+    align-items: center;
+    align-items: center;
 }
 
-footer {}
+.form {
+    padding: 15px 30px;
+    font-size: 3rem;
+}
+
+.form p {
+    /* margin: 30px; */
+    /* margin: 5rem 5rem; */
+    margin-top: 2rem;
+    max-width: 50vw;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+form * {
+    margin: 10px 0;
+    height: 3rem;
+    font-size: inherit;
+    background-color: var(--bg-bold-black);
+    border: solid 3px var(--primary-purple);
+    color: var(--luminous-gray);
+    font-size: 2rem;
+    max-width: 50rem;
+    padding: 2rem 0.5rem;
+    box-shadow:
+        0 0 7px #751e8269,
+        0 0 10px #751e8273,
+        0 0 30px #751e8252;
+}
+
+.form p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+form textarea {
+    min-height: 20rem;
+    padding-top: 10px;
+    resize: none;
+}
+
+form button {
+    width: 30%;
+    margin: 10px;
+    margin-left: 0px;
+    transition: 0.3s;
+    padding-bottom: 4rem;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: var(--primary-purple);
+
+}
+
+/* -- Footer */
 
 footer .hero1 {
     height: 10rem;
-    background-image: url(assets/pexels-francesco-paggiaro-2111015.webp);
+    background-image: url(assets/background-photo-hero2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -678,171 +819,5 @@ footer .rodape .btn-square button {
     footer .rodape {
         font-size: 0.7rem;
     }
-
-}
-
-/*______________________________________________________________________________________*/
-/*MATHEUS V*/
-
-/*--------------------------*/
-.form-hero1 {
-    display: block;
-    text-align: center;
-    height: 30vh;
-    background-image: url(assets/pexels-francesco-paggiaro-2111015.webp);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.form-hero1 h1 {
-    font-size: 5rem;
-    padding-top: 4rem;
-}
-
-.form-hero1 h2 {
-    font-size: 2rem;
-    margin-top: 2rem;
-}
-
-.form-hero2 {
-    display: flex;
-    flex-flow: wrap row;
-}
-
-.form-hero2 .addr {
-    display: flex;
-    justify-content: center;
-}
-
-@media (max-width: 600px) {
-    .form-hero2 {
-        grid-template-columns: 1fr;
-        display: flex;
-        justify-content: center;
-    }
-
-    .form {
-        width: 100vw;
-    }
-
-    .form * {
-        width: 100%;
-    }
-
-    
-}
-
-.addr {
-    flex: 100px;
-    display: flex;
-    text-align: center;
-    padding: 50px;
-    font-size: 2rem;
-    max-width: 50vw;
-    align-items: center;
-    align-items: center;
-}
-
-.form {
-    padding: 15px 30px;
-    font-size: 3rem;
-}
-
-.form p {
-    /* margin: 30px; */
-    /* margin: 5rem 5rem; */
-    margin-top: 5rem;
-    max-width: 50vw;
-}
-
-form {
-    display: grid;
-    gap: 20px;
-}
-
-form * {
-    margin: 10px 0;
-    height: 3rem;
-    font-size: inherit;
-    background-color: var(--bg-bold-black);
-    border: solid 3px var(--primary-purple);
-    color: var(--luminous-gray);
-    font-size: 2rem;
-    max-width: 50rem;
-}
-
-.form p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-form textarea {
-    height: 15rem;
-    padding-top: 10px;
-}
-
-form button {
-    width: 30%;
-    margin: 10px;
-    margin-left: 0px;
-}
-
-/*MATHEUS V*/
-/*______________________________________________________________________________________*/
-
-
-/*______________________________________________________________________________________*/
-/*TIAGO E VITOR*/
-
-#Performances .textperformance {
-    justify-content: center;
-    text-align: center;
-}
-
-#Performances .textperformance h1 {
-    margin-top: 5rem;
-    font-size: 4rem;
-}
-
-#Performances .textperformance h2 {
-    font-size: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-}
-
-#Performances .galeria ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    margin: auto 10rem;
-
-}
-
-#Performances .galeria ul a li {
-    transition: 0.3s;
-
-}
-
-#Performances .galeria ul a li img {
-    max-width: 23rem;
-    max-height: 23rem;
-    margin-bottom: 6rem;
-    border: none;
-    transition: 0.3s;
-}
-
-#Performances .galeria ul a li img:hover {
-    border: solid var(--primary-purple) 1rem;
-}
-
-
-
-/*______________________________________________________________________________________*/
-/* END TIAGO E VITOR*/
-
-@media screen and (min-width: 767px) and (max-width: 1023px) {
 
 }
