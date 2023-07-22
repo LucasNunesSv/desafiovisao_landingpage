@@ -8,9 +8,9 @@ Feito com carinho pela Equipe 5 e fruto de trabalho em grupo, colaboração e pa
 
 # Resultado Final 💚 
 
-<img src="assets\Home_Preview" alt="Home Preview"/> 
+<img src="assets/Home_Preview.png" alt="Home Preview"/> 
 
-## Como Testar 
+## Como Usar 
 
 Para ter acesso e ver o resultado do projeto basta clonar o repositório e abrir o arquivo `index.html` em algum navegador
 
